@@ -1,7 +1,13 @@
+import Controllers.BookController;
+import models.Book;
+import views.ViewsConsole;
+
+
+
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Book[] books = {
+        Book[] books = new Book[]{
                 new Book("Clean Code", 2008),
                 new Book("The Pragmatic Programmer", 1999),
                 new Book("Design Patterns: Elements of Reusable Object-Oriented Software", 1994),
@@ -33,6 +39,10 @@ public class App {
                 new Book("Deep Learning", 2016),
                 new Book("The Elements of Statistical Learning", 2001)
         };
+        BookController bC = new BookController();
+        ViewsConsole. vC = new ViewsConsole (views);
+
+
 
     }
 }
